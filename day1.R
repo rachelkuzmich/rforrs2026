@@ -999,7 +999,7 @@ par(mfrow = c(1, 2))
 if (length(crop_h5_files[grepl("2016", crop_h5_files)]) > 0) {
   hsi_crop_16 <- make_cropped_hsi_rgb(crop_h5_files[grepl("2016", crop_h5_files)][1])
   
-  # CRITICAL FIX: Add axes = TRUE to force R to render titles on the plot window
+  # Add axes = TRUE to force R to render titles on the plot window
   plotRGB(hsi_crop_16, r = 1, g = 2, b = 3, stretch = "lin", 
           axes = TRUE, mar = c(2, 2, 3, 2), main = "Cropped Hyperspectral RGB (2016)")
 } else {
